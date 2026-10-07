@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="hi-EN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+    <title>AI Aunty Apps | Official Free Android Apps</title>
+    <meta name="description" content="AI Aunty Official Apps Hub — Download 100% Free &amp; Offline Android Apps. Jokewala, SplitBhai, SmartEMI, ReturnX, and more on Google Play.">
+    <link rel="canonical" href="https://aunty-apps.web.app/">
+    <link rel="icon" type="image/webp" href="images/desi-aunty.webp">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:title" content="AI Aunty Apps | Google Play Store">
+    <meta property="og:description" content="100% Free, Safe &amp; Offline Android Apps. Jokes, Split Bill, EMI Calculator, Music.">
+    <meta property="og:image" content="https://aunty-apps.web.app/images/desi-aunty.webp">
+    <meta property="og:url" content="https://aunty-apps.web.app/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI Aunty Apps">
+    <meta name="twitter:description" content="Install verified Android apps directly from Google Play. Zero annoying ads.">
+    <meta name="twitter:image" content="https://aunty-apps.web.app/images/desi-aunty.webp">
+
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ambient-glow glow-top-left"></div>
+    <div class="ambient-glow glow-bottom-right"></div>
+
+    <div class="mobile-wrapper">
+        <!-- Compact Creator Header (~140px) -->
+        <header class="creator-header glass-panel">
+            <div class="header-top-row">
+                <div class="avatar-ring">
+                    <img src="images/desi-aunty.webp" alt="AI Aunty" class="creator-avatar">
+                    <span class="verified-dot" title="Verified Creator"><i class="fas fa-check"></i></span>
+                </div>
+                <div class="creator-header-info">
+                    <div class="creator-name-row">
+                        <h1 class="creator-name">AI Aunty Apps</h1>
+                    </div>
+                    <div class="header-sub-row">
+                        <a href="https://www.instagram.com/funny_ai_aunty" target="_blank" rel="noopener noreferrer" class="insta-handle" title="Instagram Profile">
+                            <i class="fab fa-instagram"></i> Insta
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.7rem;">•</span>
+                        <a href="https://www.facebook.com/funnyaiaunty/" target="_blank" rel="noopener noreferrer" class="fb-handle" title="Facebook Page">
+                            <i class="fab fa-facebook"></i> Facebook
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.7rem;">•</span>
+                        <span class="store-badge-tag"><i class="fab fa-google-play"></i> Apps</span>
+                    </div>
+                </div>
+                <button class="header-share-btn" onclick="shareSite()" title="Share Website">
+                    <i class="fas fa-share-nodes"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Search & Filter Controls -->
+        <div class="feed-controls">
+            <div class="search-box-compact">
+                <i class="fas fa-magnifying-glass"></i>
+                <input type="text" id="searchInput" placeholder="Search jokes, split bill, EMI, music...">
+            </div>
+            <div class="filter-chips-row">
+                <button class="filter-pill-btn active" data-category="all">⚡ All Apps (7)</button>
+                <button class="filter-pill-btn" data-category="comedy">😂 Comedy</button>
+                <button class="filter-pill-btn" data-category="finance">💰 Finance</button>
+                <button class="filter-pill-btn" data-category="music">🎵 Music</button>
+                <button class="filter-pill-btn" data-category="utility">🚀 Tools</button>
+            </div>
+        </div>
+
+        <!-- Apps List Feed (STARTS IMMEDIATELY!) -->
+        <main class="apps-feed" id="appsGrid">
+            <!-- Dynamically injected via script.js -->
+        </main>
+
+        <!-- Compact Trust Row -->
+        <div class="footer-trust-strip">
+            <div class="trust-item">
+                <i class="fas fa-shield-halved" style="color: var(--accent-emerald);"></i>
+                <span>Play Protect</span>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-wifi-slash" style="color: var(--accent-cyan);"></i>
+                <span>100% Offline</span>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-ban" style="color: var(--accent-pink);"></i>
+                <span>0 Pop-up Ads</span>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-star" style="color: #fbbf24;"></i>
+                <span>4.8★ Ratings</span>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mobile-footer">
+            <div class="mobile-footer-links">
+                <a href="https://www.instagram.com/funny_ai_aunty" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
+                <span style="color: var(--text-muted); font-size: 0.7rem;">•</span>
+                <a href="https://www.facebook.com/funnyaiaunty/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i> Facebook</a>
+                <span style="color: var(--text-muted); font-size: 0.7rem;">•</span>
+                <a href="https://play.google.com/store/apps/dev?id=5447961862962854741" target="_blank" rel="noopener noreferrer"><i class="fab fa-google-play"></i> Play Store</a>
+            </div>
+            <p>&copy; 2026 <strong>AI Aunty Apps</strong>. Free &amp; Verified on Google Play.</p>
+        </footer>
+    </div>
+
+    <!-- App Detail Modal (Native Mobile Bottom Sheet) -->
+    <div class="modal-overlay" id="appModalOverlay">
+        <div class="bottom-sheet-card">
+            <div class="sheet-handle"></div>
+            <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">
+                <i class="fas fa-xmark"></i>
+            </button>
+
+            <div class="modal-header">
+                <img id="modalAppIcon" src="" alt="App Icon" class="modal-app-icon">
+                <div class="modal-title-area">
+                    <h2 id="modalAppName">App Name</h2>
+                    <p id="modalAppSubtitle"></p>
+                    <span id="modalAppPackage" class="modal-package">package.name</span>
+                </div>
+            </div>
+
+            <!-- Prominent Direct Install CTA -->
+            <a id="modalPlayStoreBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn-sheet-install-main">
+                <i class="fab fa-google-play"></i> INSTALL FROM GOOGLE PLAY
+            </a>
+
+            <div class="modal-specs-row">
+                <div class="spec-cell">
+                    <small>Rating</small>
+                    <strong id="modalAppRating" style="color: #fbbf24;">4.9 ★</strong>
+                </div>
+                <div class="spec-cell">
+                    <small>Downloads</small>
+                    <strong id="modalAppDownloads">10K+</strong>
+                </div>
+                <div class="spec-cell">
+                    <small>Size</small>
+                    <strong id="modalAppSize">12 MB</strong>
+                </div>
+            </div>
+
+            <div class="modal-desc-text" id="modalAppDescription">
+                Description...
+            </div>
+
+            <div class="modal-highlights">
+                <h4><i class="fas fa-circle-check" style="color: var(--accent-emerald);"></i> Key Features</h4>
+                <ul class="highlight-list" id="modalHighlightsList">
+                    <!-- Dynamic -->
+                </ul>
+            </div>
+
+            <a id="modalFullPageBtn" href="#" class="btn-sheet-open-page">
+                <i class="fas fa-arrow-up-right-from-square"></i> Open Dedicated App Page
+            </a>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

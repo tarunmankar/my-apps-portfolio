@@ -1,0 +1,9 @@
+# Firebase cache
+.firebase/
+*/.firebase/
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+*.log
+*.png

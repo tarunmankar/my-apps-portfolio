@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="hi-EN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+    <title id="pageTitle">App Details | AI Aunty Apps</title>
+    <meta name="description" id="pageMetaDesc" content="View app details, features and download official Android app from AI Aunty Apps.">
+    <link rel="canonical" id="pageCanonical" href="https://aunty-apps.web.app/app.html">
+    <link rel="icon" type="image/webp" href="images/desi-aunty.webp">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" id="ogTitle" content="App Details | AI Aunty Apps">
+    <meta property="og:description" id="ogDesc" content="Official Android Apps showcase by AI Aunty. 100% Free &amp; Secure.">
+    <meta property="og:image" id="ogImage" content="https://aunty-apps.web.app/images/desi-aunty.webp">
+
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ambient-glow glow-top-left"></div>
+    <div class="ambient-glow glow-bottom-right"></div>
+
+    <div class="app-detail-container">
+        <!-- Top Nav Bar -->
+        <header class="top-nav-bar">
+            <a href="index.html" class="nav-brand-badge">
+                <img src="images/desi-aunty.webp" alt="AI Aunty" class="nav-mini-avatar">
+                <span class="nav-brand-text">AI Aunty Apps</span>
+            </a>
+            <div class="nav-quick-actions">
+                <a href="https://www.facebook.com/funnyaiaunty/" target="_blank" rel="noopener noreferrer" class="nav-icon-btn nav-fb-btn" title="Facebook Page">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/funny_ai_aunty" target="_blank" rel="noopener noreferrer" class="nav-icon-btn nav-insta-btn" title="Instagram Profile">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <button class="nav-icon-btn" onclick="shareCurrentApp()" title="Share Link">
+                    <i class="fas fa-share-nodes"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Back Navigation -->
+        <div class="back-nav-bar">
+            <a href="index.html" class="back-pill-btn">
+                <i class="fas fa-arrow-left"></i> All Apps
+            </a>
+            <span id="detailStatus" class="trust-badge" style="color: var(--accent-emerald);">
+                <i class="fas fa-circle-check"></i> Play Store Verified
+            </span>
+        </div>
+
+        <!-- App Hero Card -->
+        <div class="detail-hero-box glass-panel">
+            <img id="detailIcon" src="images/jokewala.webp" alt="App Icon" class="detail-app-icon-large">
+            <h1 id="detailName" class="detail-title">Jokewala</h1>
+            <p id="detailTagline" class="detail-tagline-text">Desi Hindi Jokes &amp; Audio Comedy</p>
+            
+            <a id="detailPlayStoreBtn" href="#" target="_blank" rel="noopener noreferrer" class="detail-install-cta-btn">
+                <i class="fab fa-google-play"></i> INSTALL FROM GOOGLE PLAY
+            </a>
+
+            <div class="detail-secondary-actions">
+                <button class="btn-share-app" onclick="shareCurrentApp()">
+                    <i class="fas fa-share-nodes"></i> Share with Friends
+                </button>
+            </div>
+        </div>
+
+        <!-- App Specifications Grid -->
+        <div class="specs-grid-row">
+            <div class="spec-box-item glass-panel">
+                <small>Rating</small>
+                <strong id="detailRating" style="color: #fbbf24;">4.9 ★</strong>
+            </div>
+            <div class="spec-box-item glass-panel">
+                <small>Downloads</small>
+                <strong id="detailDownloads">10K+</strong>
+            </div>
+            <div class="spec-box-item glass-panel">
+                <small>Download Size</small>
+                <strong id="detailSize">12 MB</strong>
+            </div>
+            <div class="spec-box-item glass-panel">
+                <small>Offline Support</small>
+                <strong style="color: var(--accent-emerald);">100% Offline</strong>
+            </div>
+        </div>
+
+        <!-- About App -->
+        <div class="section-card glass-panel">
+            <h3><i class="fas fa-circle-info" style="color: var(--accent-cyan);"></i> About This App</h3>
+            <p id="detailFullDescription" style="color: var(--text-secondary); line-height: 1.6; font-size: 0.92rem;">
+                Loading description...
+            </p>
+        </div>
+
+        <!-- Features & Highlights -->
+        <div class="section-card glass-panel">
+            <h3><i class="fas fa-circle-check" style="color: var(--accent-emerald);"></i> Key Highlights</h3>
+            <ul class="highlight-list" id="detailHighlightsList">
+                <!-- Injected via script -->
+            </ul>
+        </div>
+
+        <!-- Technical Specs -->
+        <div class="section-card glass-panel">
+            <h3><i class="fas fa-gear" style="color: var(--accent-amber);"></i> Technical Info</h3>
+            <div style="display: flex; justify-content: space-between; padding: 0.4rem 0; font-size: 0.85rem; border-bottom: 1px solid var(--glass-border);">
+                <span style="color: var(--text-muted);">Package ID</span>
+                <span id="detailPackage" style="font-family: monospace; color: var(--accent-cyan);">com.app</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 0.4rem 0; font-size: 0.85rem; border-bottom: 1px solid var(--glass-border);">
+                <span style="color: var(--text-muted);">Category</span>
+                <span id="detailCategory" style="color: #ffffff;">Comedy</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 0.4rem 0; font-size: 0.85rem;">
+                <span style="color: var(--text-muted);">Play Store License</span>
+                <span style="color: var(--accent-emerald);">Official Free App</span>
+            </div>
+        </div>
+
+        <!-- More Recommended Apps -->
+        <div class="section-card glass-panel">
+            <h3><i class="fas fa-mobile-screen" style="color: var(--accent-pink);"></i> More Apps by AI Aunty</h3>
+            <div class="other-apps-scroll-list" id="otherAppsList">
+                <!-- Injected -->
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bio-footer-bar">
+            <div class="bio-footer-links">
+                <a href="index.html">All Apps Home</a>
+                <span class="dot">•</span>
+                <a href="https://www.instagram.com/funny_ai_aunty" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
+                <span class="dot">•</span>
+                <a href="https://www.facebook.com/funnyaiaunty/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i> Facebook</a>
+            </div>
+            <p class="bio-copyright">
+                &copy; 2026 <strong>AI Aunty Apps</strong>. Google Play Verified.
+            </p>
+        </footer>
+    </div>
+
+    <!-- Fixed Sticky Bottom CTA Bar on Mobile -->
+    <div class="sticky-app-bottom-cta">
+        <div class="sticky-app-info">
+            <img id="stickyAppIcon" src="images/jokewala.webp" alt="App" class="sticky-app-thumb">
+            <div class="sticky-app-texts">
+                <span id="stickyAppName" class="sticky-app-title">Jokewala</span>
+                <span class="sticky-app-sub">100% Free on Google Play</span>
+            </div>
+        </div>
+        <a id="stickyPlayBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn-sticky-play">
+            <i class="fab fa-google-play"></i> INSTALL
+        </a>
+    </div>
+
+    <!-- Script to populate app details -->
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const params = new URLSearchParams(window.location.search);
+            const appId = params.get("id") || "jokewala";
+            const app = APPS_DATABASE.find(a => a.id === appId || (appId === "studioplayer" && a.id === "tmplayer") || (appId === "zenwave" && a.id === "tarunmusic")) || APPS_DATABASE[0];
+
+            // Set document meta
+            document.title = `${app.name} - Official App Page | AI Aunty Apps`;
+            const pageTitleEl = document.getElementById("pageTitle");
+            if (pageTitleEl) pageTitleEl.textContent = `${app.name} | AI Aunty Apps`;
+            
+            const metaDescEl = document.getElementById("pageMetaDesc");
+            if (metaDescEl) metaDescEl.content = `${app.name}: ${app.tagline} Download free on Google Play.`;
+            
+            const canonicalEl = document.getElementById("pageCanonical");
+            if (canonicalEl) canonicalEl.href = `https://aunty-apps.web.app/app.html?id=${app.id}`;
+
+            // Populate hero
+            const detailIcon = document.getElementById("detailIcon");
+            if (detailIcon) {
+                detailIcon.src = app.icon;
+                detailIcon.alt = app.name;
+            }
+            const detailName = document.getElementById("detailName");
+            if (detailName) detailName.textContent = app.name;
+            
+            const detailTagline = document.getElementById("detailTagline");
+            if (detailTagline) detailTagline.textContent = app.tagline;
+            
+            const detailCategory = document.getElementById("detailCategory");
+            if (detailCategory) detailCategory.textContent = app.categoryLabel;
+            
+            const detailPlayBtn = document.getElementById("detailPlayStoreBtn");
+            if (detailPlayBtn) detailPlayBtn.href = app.playStoreUrl;
+
+            // Sticky Bottom CTA
+            const stickyAppIcon = document.getElementById("stickyAppIcon");
+            if (stickyAppIcon) stickyAppIcon.src = app.icon;
+            
+            const stickyAppName = document.getElementById("stickyAppName");
+            if (stickyAppName) stickyAppName.textContent = app.name;
+            
+            const stickyPlayBtn = document.getElementById("stickyPlayBtn");
+            if (stickyPlayBtn) stickyPlayBtn.href = app.playStoreUrl;
+
+            // Details
+            const descEl = document.getElementById("detailFullDescription");
+            if (descEl) descEl.textContent = app.description;
+            
+            const pkgEl = document.getElementById("detailPackage");
+            if (pkgEl) pkgEl.textContent = app.packageName;
+            
+            const ratingEl = document.getElementById("detailRating");
+            if (ratingEl) ratingEl.textContent = app.rating;
+            
+            const downloadsEl = document.getElementById("detailDownloads");
+            if (downloadsEl) downloadsEl.textContent = app.downloads;
+            
+            const sizeEl = document.getElementById("detailSize");
+            if (sizeEl) sizeEl.textContent = app.size;
+
+            // Highlights
+            const hlContainer = document.getElementById("detailHighlightsList");
+            if (hlContainer && app.highlights) {
+                hlContainer.innerHTML = app.highlights.map(h => `
+                    <li><i class="fas fa-check-circle"></i> <span>${h}</span></li>
+                `).join("");
+            }
+
+            // More Apps
+            const otherAppsContainer = document.getElementById("otherAppsList");
+            if (otherAppsContainer) {
+                const otherApps = APPS_DATABASE.filter(a => a.id !== app.id).slice(0, 4);
+                otherAppsContainer.innerHTML = otherApps.map(o => `
+                    <a href="app.html?id=${o.id}" class="other-app-row-item">
+                        <img src="${o.icon}" alt="${o.name}">
+                        <div style="flex: 1; min-width: 0;">
+                            <div style="font-weight: 700; font-size: 0.88rem; color: #ffffff;">${o.name}</div>
+                            <div style="font-size: 0.75rem; color: var(--text-muted);">${o.categoryLabel} • ${o.rating}</div>
+                        </div>
+                        <i class="fas fa-chevron-right" style="color: var(--text-muted); font-size: 0.75rem;"></i>
+                    </a>
+                `).join("");
+            }
+        });
+
+        function shareCurrentApp() {
+            const params = new URLSearchParams(window.location.search);
+            const appId = params.get("id") || "jokewala";
+            const app = APPS_DATABASE.find(a => a.id === appId) || APPS_DATABASE[0];
+            if (typeof shareSite === "function") {
+                shareSite(`${app.name} on AI Aunty Apps`, window.location.href);
+            }
+        }
+    </script>
+</body>
+</html>
